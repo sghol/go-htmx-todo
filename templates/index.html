@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/htmx.min.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <input id="task-title" placeholder="عنوان تسک" />
+      <ul class="task-list">
+        {{ range .}}
+          <li class="task-item"><input type="checkbox">{{ .Title }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  direction: rtl;
+  text-align: right;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
